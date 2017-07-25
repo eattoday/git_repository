@@ -163,3 +163,718 @@ Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进
 	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
 	... 7 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 10 2017-07-25 10:51:49.962
+!MESSAGE Updating the index from remote failed. ; version: 1.100.0.v20160217-0435
+!STACK 0
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:240)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:193)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at com.google.common.io.ByteStreams.copy(ByteStreams.java:169)
+	at com.google.common.io.ByteSink.writeFrom(ByteSink.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.Zips.unzip(Zips.java:82)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerProblemsHistory$UpdateIndexJob.run(ServerProblemsHistory.java:293)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2017-07-25 10:55:51.243
+!MESSAGE Could not auto-share project common
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“common”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2017-07-25 10:55:51.244
+!MESSAGE 提供的 SVN 信息与磁盘上“common”项目的信息不相匹配。
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2017-07-25 10:56:41.669
+!MESSAGE Could not auto-share project siky_dao
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“siky_dao”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2017-07-25 10:56:41.670
+!MESSAGE 提供的 SVN 信息与磁盘上“siky_dao”项目的信息不相匹配。
+
+!ENTRY org.eclipse.egit.core 4 0 2017-07-25 10:56:41.803
+!MESSAGE Unable to ignore resources
+!STACK 0
+java.lang.IllegalArgumentException: Attempted to beginRule: F/common/siky_dao, does not match outer scope rule: MultiRule[P/siky_dao]
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:333)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:85)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:307)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:120)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2189)
+	at org.eclipse.core.internal.resources.File.create(File.java:105)
+	at org.eclipse.core.internal.resources.File.create(File.java:180)
+	at org.eclipse.egit.core.op.IgnoreOperation.addIgnore(IgnoreOperation.java:180)
+	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:98)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.autoIgnoreDerivedResources(ConnectProviderOperation.java:190)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:167)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:105)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:56:43.495
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:56:43.508
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:56:44.121
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:56:44.134
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2017-07-25 10:57:41.370
+!MESSAGE Could not auto-share project siky_domain
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“siky_domain”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2017-07-25 10:57:41.370
+!MESSAGE 提供的 SVN 信息与磁盘上“siky_domain”项目的信息不相匹配。
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:57:43.261
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:57:43.271
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:57:43.444
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:57:43.452
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2017-07-25 10:58:16.627
+!MESSAGE Could not auto-share project siky_service
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“siky_service”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2017-07-25 10:58:16.627
+!MESSAGE 提供的 SVN 信息与磁盘上“siky_service”项目的信息不相匹配。
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.499
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.509
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.681
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.689
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.705
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:58:18.711
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2017-07-25 10:59:07.873
+!MESSAGE Could not auto-share project siky_web
+!STACK 1
+org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘上“siky_web”项目的信息不相匹配。
+	at org.tigris.subversion.subclipse.core.resources.SVNWorkspaceRoot.setSharing(SVNWorkspaceRoot.java:206)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.autoconnectSVNProject(SVNTeamProviderType.java:140)
+	at org.tigris.subversion.subclipse.core.SVNTeamProviderType$AutoShareJob.run(SVNTeamProviderType.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2017-07-25 10:59:07.873
+!MESSAGE 提供的 SVN 信息与磁盘上“siky_web”项目的信息不相匹配。
+
+!ENTRY org.eclipse.egit.core 4 0 2017-07-25 10:59:07.999
+!MESSAGE Unable to ignore resources
+!STACK 0
+java.lang.IllegalArgumentException: Attempted to beginRule: F/common/siky_web, does not match outer scope rule: MultiRule[P/siky_web]
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:333)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:85)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:307)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:120)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2189)
+	at org.eclipse.core.internal.resources.File.create(File.java:105)
+	at org.eclipse.core.internal.resources.File.create(File.java:180)
+	at org.eclipse.egit.core.op.IgnoreOperation.addIgnore(IgnoreOperation.java:180)
+	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:98)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.autoIgnoreDerivedResources(ConnectProviderOperation.java:190)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:167)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:105)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.761
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.771
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.786
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.795
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.811
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.820
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.838
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:10.847
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:25.260
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:25.268
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:38.570
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 10:59:38.578
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:40.427
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:40.435
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:40.448
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:41.538
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:41.545
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:55.008
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:55.016
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:55.843
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:55.849
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.662
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.673
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.727
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.738
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.775
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:00:56.782
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.691
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.698
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.749
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.756
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.815
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:10.822
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:12.409
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:12.415
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:59.424
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:01:59.431
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:03.139
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:03.147
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:05.103
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:05.110
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:07.024
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:02:07.045
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-25 11:03:32.929
+!MESSAGE Could not download sources for mysql:mysql-connector-java:5.1.8
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-java:jar:sources:5.1.8
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:244)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:201)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing mysql:mysql-connector-java:jar:sources:5.1.8
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:32.929
+!MESSAGE Could not resolve artifact mysql:mysql-connector-java:jar:sources:5.1.8
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:32.929
+!MESSAGE Missing mysql:mysql-connector-java:jar:sources:5.1.8
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-25 11:03:42.199
+!MESSAGE Could not download sources for jfree:jcommon:1.0.15
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact jfree:jcommon:jar:sources:1.0.15
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:244)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:201)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing jfree:jcommon:jar:sources:1.0.15
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:42.199
+!MESSAGE Could not resolve artifact jfree:jcommon:jar:sources:1.0.15
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:42.199
+!MESSAGE Missing jfree:jcommon:jar:sources:1.0.15
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-25 11:03:43.510
+!MESSAGE Could not download sources for jfree:jfreechart:1.0.12
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact jfree:jfreechart:jar:sources:1.0.12
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:244)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:201)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing jfree:jfreechart:jar:sources:1.0.12
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:43.510
+!MESSAGE Could not resolve artifact jfree:jfreechart:jar:sources:1.0.12
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:43.510
+!MESSAGE Missing jfree:jfreechart:jar:sources:1.0.12
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-25 11:03:44.407
+!MESSAGE Could not download sources for xml-apis:xml-apis:1.3.02
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact xml-apis:xml-apis:jar:sources:1.3.02
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:244)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:201)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing xml-apis:xml-apis:jar:sources:1.3.02
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:44.407
+!MESSAGE Could not resolve artifact xml-apis:xml-apis:jar:sources:1.3.02
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:44.407
+!MESSAGE Missing xml-apis:xml-apis:jar:sources:1.3.02
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-07-25 11:03:45.243
+!MESSAGE Could not download sources for eclipse:jdtcore:3.1.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact eclipse:jdtcore:jar:sources:3.1.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:244)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:201)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:153)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:136)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: Missing eclipse:jdtcore:jar:sources:3.1.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:45.243
+!MESSAGE Could not resolve artifact eclipse:jdtcore:jar:sources:3.1.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2017-07-25 11:03:45.243
+!MESSAGE Missing eclipse:jdtcore:jar:sources:3.1.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:49.393
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:49.412
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:51.764
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:51.779
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:53.555
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:53.571
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:55.333
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:55.357
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:55.373
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.426
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.446
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.510
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.523
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.582
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:03:56.592
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:04:12.482
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:04:12.493
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:04:12.509
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:04:12.518
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:04:51.953
+!MESSAGE The POM for net.sf.json-lib:json-lib:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:00.347
+!MESSAGE The POM for net.sf.json-lib:json-lib:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:03.650
+!MESSAGE The POM for net.sf.json-lib:json-lib:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:04.724
+!MESSAGE The POM for net.sf.json-lib:json-lib:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:05.733
+!MESSAGE The POM for net.sf.json-lib:json-lib:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:06.067
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:06.076
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:17.094
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:17.102
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:18.979
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:18.985
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:20.957
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:20.963
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:22.826
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:05:22.833
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:30.704
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:30.712
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:33.045
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:33.051
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:35.005
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:35.011
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:36.969
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:06:36.977
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:43.321
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:43.328
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:45.592
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:45.599
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:47.524
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:47.531
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:49.483
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:49.503
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:07:49.512
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:07.217
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:07.224
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:09.447
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:09.455
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:11.403
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:11.409
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:13.341
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:13.360
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:09:13.370
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:10.908
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:10.916
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:12.635
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:12.641
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:14.348
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:14.354
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:16.120
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:16.127
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:38.806
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:38.814
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:40.487
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:40.493
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:42.173
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:42.179
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:43.902
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:10:43.909
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:21.580
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:21.588
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:23.312
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:23.318
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:25.012
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:25.019
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:26.737
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:11:26.743
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:37.949
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:37.960
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:40.076
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:40.082
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:41.785
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:41.791
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:43.689
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:12:43.712
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:13:53.771
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:13:53.782
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:14:01.188
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-07-25 11:14:01.195
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
