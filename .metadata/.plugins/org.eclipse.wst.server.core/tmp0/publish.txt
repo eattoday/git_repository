@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Tue Jul 25 11:17:54 CST 2017
+#Tue Jul 25 15:33:37 CST 2017
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Administrator\\.m2\\repository\\org\\springframework\\spring-web\\4.2.4.RELEASE\\spring-web-4.2.4.RELEASE.jar=WEB-INF/lib/spring-web-4.2.4.RELEASE.jar
 org.eclipse.jst.j2ee.server\:siky_service=WEB-INF/lib/siky_service-0.0.1-SNAPSHOT.jar
 org.eclipse.jst.j2ee.server\:siky_domain=WEB-INF/lib/siky_domain-0.0.1-SNAPSHOT.jar
